@@ -20,22 +20,70 @@
   font-style: normal;
 }
 
-/*Structure*/
+/* Solarized Light */
+:root {
+  --background: #fdf6e3;
+  --surface: #eee8d5;
+  --text: #657b83;
+  --yellow: #AB7A01;
+  --orange: #CD4E10;
+}
 
-.header a {
+/* Solarized Dark */
+[data-theme="dark"] {
+  --background: #002b36;
+  --surface: #073642;
+  --text: #839496;
+  --yellow: #FAAC00;
+  --orange: #E45004;
+}
+
+header {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  color: var(--yellow);
+  font-size: 4rem;
+  margin: 0;
+}
+
+header p {
+  color: var(--orange);
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+header a {
   color: inherit;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.header {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
+#theme-toggle {
+  background-color: var(--surface);
+  border: 1px solid var(--yellow);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-
-.subtitle {
-    font-size:x-large;
+#logo {
+  width: 120px;
+  height: auto;
+  display: block;
 }
