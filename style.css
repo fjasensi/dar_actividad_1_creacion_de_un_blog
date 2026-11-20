@@ -47,6 +47,38 @@ body {
   background-color: var(--background);
   color: var(--text);
   transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+  background-color: var(--surface);
+  color: var(--text);
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer a {
+  color: var(--yellow);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: var(--orange);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--text);
+  opacity: 0.3;
+  margin: 20px 0;
 }
 
 h1 {
