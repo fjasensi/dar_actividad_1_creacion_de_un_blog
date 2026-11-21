@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Code & Coffee</title>
+        <link rel="icon" type="image/png" href="/img/logo-light.png">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Press+Start+2P&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <button id="theme-toggle" aria-label="Cambiar tema">
+            🌙
+        </button>
+        <header>
+            <a href="/index.html">
+                <img id="logo" src="/img/logo-light.png" alt="Code & Coffee">
+                <h1 class="source-code-pro">Code & Coffee</h1>
+                <p class="homemade-apple-regular">Código con estilo</p>
+            </a>
+        </header>
+        
+        <script src="/js/theme.js" defer></script>
+
+        <main>
+            <hr>
+            <nav class="navbar">
+                <a href="/index.html">Inicio</a>
+                <a href="/sobre_mi.html">Sobre mí</a>
+            </nav>
+            <hr>
+
+            <article class="post-page">
+                <header class="post-header">
+                    <span class="post-category">Desarrollo web</span>
+
+                    <h2>Temas en desarrollo web.</h2>
+
+                    <p class="post-description">
+                        Cómo añadir tema claro y oscuro a tu web.
+                    </p>
+
+                    <div class="post-meta">
+                        <time datetime="2026-11-10">
+                            10 de noviembre de 2026
+                        </time>
+                        <span>· 10 min de lectura</span>
+                    </div>
+                </header>
+
+                <figure class="post-cover">
+                    <img src="../img/blog.png"
+                        alt="Un portátil encima de una mesa">
+
+                    <figcaption>
+                        Creando tu propia web
+                    </figcaption>
+                </figure>
+
+                <div class="post-body">
+
+                    <p>
+                        En esta entrada vamos a ver cómo podemos añadir un tema
+                        claro y oscuro a nuestra web. Es una funcionalidad bastante
+                        habitual que permite al usuario elegir la apariencia que
+                        le resulte más cómoda.
+                    </p>
+
+                    <h3>¿Qué necesitamos?</h3>
+
+                    <p>
+                        Básicamente, CSS y JavaScript. Utilizaremos CSS para definir
+                        los colores de cada tema y JavaScript para cambiar entre ellos.
+                        Además, guardaremos la preferencia del usuario para que no
+                        tenga que seleccionar el tema cada vez que visite la web.
+                    </p>
+
+                    <h3>El CSS</h3>
+
+                    <p>
+                        Lo primero es definir los colores utilizando variables CSS.
+                        De esta manera, podemos tener una paleta para el tema claro
+                        y otra para el oscuro sin necesidad de duplicar todos los estilos.
+                    </p>
+
+                    <p>
+                        En nuestro caso hemos utilizado la paleta Solarized, que
+                        dispone de versiones Light y Dark. Para cambiar los colores,
+                        basta con modificar el atributo data-theme del documento.
+                    </p>
+
+                    <h3>La parte javascript</h3>
+
+                    <p>
+                        Con JavaScript nos encargamos de detectar cuándo el usuario
+                        pulsa el botón para cambiar de tema. Dependiendo del tema
+                        que esté activo, asignamos el valor "light" o "dark" al
+                        atributo data-theme.
+                    </p>
+
+                    <p>
+                        También utilizamos localStorage para guardar la selección.
+                        Así, cuando el usuario vuelve a entrar en la página,
+                        recuperamos su preferencia y aplicamos automáticamente
+                        el tema correspondiente.
+                    </p>
+
+                    <p>
+                        Por último, cambiamos el logo para que sus
+                        colores se adapten al tema seleccionado. Con estos pequeños
+                        cambios conseguimos una web más personalizable sin necesidad
+                        de utilizar ninguna librería externa.
+                    </p>
+
+                </div>
+
+                <footer class="post-footer">
+                    <a href="../index.html">
+                        ← Volver a los artículos
+                    </a>
+                </footer>
+
+            </article>
+        </main>
+
+        <footer>
+            <p class="source-code-pro">Code & Coffee</p>
+            <p class="homemade-apple-regular">Código con estilo</p>
+
+            <nav>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/fjasensi">GitHub</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/fjasensi">LinkedIn</a>
+            </nav>
+
+            <hr>
+
+            <small>
+                &copy; 2026 Code & Cofee.
+                Todos los derechos reservados
+            </small>
+        </footer>
+    </body>
+</html>

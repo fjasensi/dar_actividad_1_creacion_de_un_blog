@@ -38,7 +38,7 @@
   --orange: #E45004;
 }
 
-header {
+body > header {
   padding: 40px 20px;
   text-align: center;
 }
@@ -122,13 +122,13 @@ h1 {
   margin: 0;
 }
 
-header p {
+body > header p {
   color: var(--orange);
   font-size: 1.8rem;
   margin: 0;
 }
 
-header a {
+body > header a {
   color: inherit;
   text-decoration: none;
   display: flex;
@@ -204,4 +204,103 @@ header a {
     display: inline-block;
     margin-top: 15px;
     color: var(--orange);
+}
+
+
+.post-page {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 50px 24px;
+}
+
+.post-header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.post-category {
+    color: var(--orange);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.post-header h2 {
+    color: var(--yellow);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 15px 0;
+}
+
+.post-description {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.post-meta {
+    color: var(--text);
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.post-cover {
+    margin: 0 0 40px;
+}
+
+.post-cover img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.post-cover figcaption {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--text);
+}
+
+.post-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.post-body h3 {
+    color: var(--yellow);
+    margin-top: 35px;
+}
+
+.post-body p {
+    margin-bottom: 20px;
+}
+
+.post-body pre {
+    background-color: var(--surface);
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    line-height: 1.5;
+}
+
+.post-body code {
+    font-family: "Source Code Pro", monospace;
+    font-size: 0.9rem;
+}
+
+.post-footer {
+    background: transparent;
+    text-align: left;
+    border-top: 1px solid var(--surface);
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+.post-footer a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.post-footer a:hover {
+    text-decoration: underline;
 }

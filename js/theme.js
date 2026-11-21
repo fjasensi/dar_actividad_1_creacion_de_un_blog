@@ -4,7 +4,7 @@ const logo = document.getElementById("logo");
 function setTheme(theme) {
     document.documentElement.dataset.theme = theme;
 
-    logo.src = `img/logo-${theme}.png`;
+    logo.src = `/img/logo-${theme}.png`;
 
     button.textContent = theme === "dark" ? "☀️" : "🌙";
 

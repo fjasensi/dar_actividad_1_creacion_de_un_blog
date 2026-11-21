@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Code & Coffee</title>
+        <link rel="icon" type="image/png" href="/img/logo-light.png">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Press+Start+2P&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <button id="theme-toggle" aria-label="Cambiar tema">
+            🌙
+        </button>
+        <header>
+            <a href="/index.html">
+                <img id="logo" src="/img/logo-light.png" alt="Code & Coffee">
+                <h1 class="source-code-pro">Code & Coffee</h1>
+                <p class="homemade-apple-regular">Código con estilo</p>
+            </a>
+        </header>
+        
+        <script src="/js/theme.js" defer></script>
+
+        <main>
+            <hr>
+            <nav class="navbar">
+                <a href="/index.html">Inicio</a>
+                <a href="/sobre_mi.html">Sobre mí</a>
+            </nav>
+            <hr>
+
+            <article class="post-page">
+                <header class="post-header">
+                    <span class="post-category">Emulación</span>
+
+                    <h2>Chip-8 en la actualidad.</h2>
+
+                    <p class="post-description">
+                        Una introducción al ya olvidado lenguaje Chip-8.
+                    </p>
+
+                    <div class="post-meta">
+                        <time datetime="2026-11-21">
+                            21 de noviembre de 2026
+                        </time>
+                        <span>· 3 min de lectura</span>
+                    </div>
+                </header>
+
+                <figure class="post-cover">
+                    <img src="../img/chip8.png"
+                        alt="Una ventana de un juego en chip 8">
+
+                    <figcaption>
+                        Jugando con Chip-8
+                    </figcaption>
+                </figure>
+
+                <div class="post-body">
+
+                    <p>
+                        En esta entrada vamos a explorar uno
+                        de los primeros lenguajes interpretados.
+                    </p>
+
+                    <h3>¿Qué es un Chip-8?</h3>
+
+                    <p>
+                        Chip-8 es un lenguaje de programación interpretado
+                        y una máquina virtual creada por Joseph Weisbecker a mediados de los años 70
+                        para microordenadores de 8 bits como el COSMAC VIP y el Telmac 1800.
+                    </p>
+
+                    <h3>¿Para qué se utilizó?</h3>
+
+                    <p>
+                        Los programas de Chip-8 corrían sobre una máquina virtual
+                        de Chip-8, esto se hizo así para que los videojuegos fueran
+                        más fáciles de programar en otros computadores.
+                    </p>
+
+                    <h3>Chip-8 hoy en día</h3>
+
+                    <p>
+                        Hay una implementación de CHIP-8 para casi todas las 
+                        plataformas imaginables, así como algunas herramientas 
+                        de desarrollo. A pesar de eso, solo hay un pequeño número 
+                        de juegos para CHIP-8.
+                    </p>
+
+                </div>
+
+                <footer class="post-footer">
+                    <a href="../index.html">
+                        ← Volver a los artículos
+                    </a>
+                </footer>
+
+            </article>
+        </main>
+
+        <footer>
+            <p class="source-code-pro">Code & Coffee</p>
+            <p class="homemade-apple-regular">Código con estilo</p>
+
+            <nav>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/fjasensi">GitHub</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/fjasensi">LinkedIn</a>
+            </nav>
+
+            <hr>
+
+            <small>
+                &copy; 2026 Code & Cofee.
+                Todos los derechos reservados
+            </small>
+        </footer>
+    </body>
+</html>
