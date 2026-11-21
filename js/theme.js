@@ -1,10 +1,11 @@
 const button = document.getElementById("theme-toggle");
 const logo = document.getElementById("logo");
+const logoBaseUrl = new URL(".", logo.src);
 
 function setTheme(theme) {
     document.documentElement.dataset.theme = theme;
 
-    logo.src = `/img/logo-${theme}.png`;
+    logo.src = new URL(`logo-${theme}.png`, logoBaseUrl).href;
 
     button.textContent = theme === "dark" ? "☀️" : "🌙";
 
