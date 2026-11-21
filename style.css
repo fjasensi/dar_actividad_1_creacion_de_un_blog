@@ -161,3 +161,47 @@ header a {
   display: block;
   border-radius: 10px;
 }
+
+.posts {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.posts h2 {
+    grid-column: 1 / -1;
+    color: var(--yellow);
+}
+
+.post-card {
+    background: var(--surface);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.post-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-content h3 {
+    color: var(--yellow);
+}
+
+.category {
+    color: var(--orange);
+}
+
+.post-content a {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--orange);
+}
