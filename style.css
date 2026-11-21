@@ -57,6 +57,41 @@ main {
     flex: 1;
 }
 
+main a {
+  color: var(--yellow);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+main a:hover {
+  color: var(--orange);
+}
+
+.navbar {
+  text-align: center;
+}
+
+.main_body {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.about_me_picture {
+  flex: 0 0 200px;
+}
+
+.about_me_text {
+  flex: 1;
+}
+
+.about_me_text h1 {
+  margin-bottom: 20px;
+}
+
 footer {
   background-color: var(--surface);
   color: var(--text);
@@ -118,4 +153,11 @@ header a {
   width: 120px;
   height: auto;
   display: block;
+}
+
+#profile_picture {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
 }
